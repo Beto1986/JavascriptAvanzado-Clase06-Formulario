@@ -1,0 +1,27 @@
+.formulario {
+    text-align: center;
+    margin: 0 auto;
+}
+
+input {
+    margin-top: 10px;
+}
+
+.valido,
+.validoPass,
+.validoPassRepetida,
+.validoTelefono {
+    background-color: green;
+}
+
+.invalido,
+.invalidoPass,
+.invalidoPassRepetida,
+.invalidoTelefono {
+    background-color: red;
+}
+
+span {
+    color: red;
+    font-size: 15px;
+}

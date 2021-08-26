@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Avanzado Clase 6 - Ejercicios de formularios </title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Ejemplo de clase -->
+    <!-- <form action="htpps://ptsv2.com/t/kude8-1628549408/post" id="form">
+        <input type="text" name="pass1" id="pass1">
+        <input type="text" name="pass2" id="pass2">
+        <input type="submit" value="Enviar">
+    </form> -->
+
+    <!-- a) Crear un formulario con los siguientes inputs. (ver tabla) -->
+    <!--Nombre          Tipo dato    Requerido     Validar 
+        Nombre          text         si                                                                        
+        Email           email        si          
+        Contraseña      password     si             Debe contener al menos un número
+        Repet. contra.  password     si             Debe coincidir con la primera.
+        Mensaje         textarea     no             
+        Telefono                     si             Debe empezar con 1,2,3 o 4.
+        Captcha         text         si             Pondremos alguna imagen aleatoria de “captcha”.
+                                                    Validaremos que esté correcto. -->
+
+    <form action="" id="form" class="formulario">
+        <div>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+        </div>
+        <div>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+        </div>
+        <input type="password" name="password" id="password" placeholder="Contraseña" required>
+        </div>
+        <div>
+            <span id="spanpass"></span>
+        </div>
+        <div>
+            <input type="password" name="repetirPassword" id="repetirPassword" placeholder="Repetir Contraseña" required>
+        </div>
+        <div>
+            <span id="spanpassrepetida"></span>
+        </div>
+        <div>
+            <input type="textarea" name="mensaje" id="mensaje" placeholder="Mensaje">
+        </div>
+        <div>
+            <input type="number" name="telefono" id="telefono" placeholder="Telefono" required>
+        </div>
+        <div>
+            <span id="spantelefono"></span>
+        </div>
+        <div>
+            <input type="text" name="captcha" id="captcha" placeholder="Captcha" required>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
